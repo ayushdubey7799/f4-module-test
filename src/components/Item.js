@@ -10,7 +10,7 @@ const Item = () => {
     return <div id="itemDetails">
         <Link to="/">Home</Link>
         <h1>Details page for post with ID {product.id}</h1>
-        <img id = "details" src={`https://picsum.photos/200?random=${product.id}`} />
+        <img id = "details" src={`https://picsum.photos/200?random=${product.id}`} alt="i"/>
         <h2>User ID: {product.id}</h2>
     <h2>Title: {product.title}</h2>
     <h2>Body: {product.body}</h2>

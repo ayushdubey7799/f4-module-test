@@ -28,7 +28,7 @@ const Home = () => {
                     return (
                         <Link to={"/item/:" + item.id} style={{ color: "white", textDecoration: "none" }}>
                             <li key={index}>
-                                <img src={`https://picsum.photos/200?random=${item.id}`}></img>
+                                <img src={`https://picsum.photos/200?random=${item.id}`} alt="i" />
 
                                 <p>User ID: {item.id}</p>
                                 <p>Title: {item.title.slice(0, 20) + "..."}</p>

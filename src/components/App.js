@@ -2,7 +2,7 @@ import Home from "./Home";
 import Item from "./Item";
 import { Provider } from "react-redux";
 import store from "../redux/store";
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import "../App.css";
 
 
@@ -14,7 +14,7 @@ const App = () => {
     <>
     <p>Social Media App</p>
   <Provider store = {store}>
-    <BrowserRouter>
+    {/* <HashRouter> */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/item/:id" element={<Item />} />
@@ -25,7 +25,7 @@ const App = () => {
          
 
       
-    </BrowserRouter>
+    {/* </HashRouter> */}
     </Provider>
     </>
   );
